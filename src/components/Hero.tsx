@@ -3,9 +3,9 @@ import { site } from "@/content/site";
 
 export function Hero() {
   return (
-    <section className="relative overflow-hidden border-b border-border">
-      <div className="relative mx-auto grid min-h-[min(88vh,52rem)] max-w-none lg:grid-cols-2">
-        <div className="animate-fade-up flex flex-col justify-end px-5 pb-16 pt-14 sm:px-8 lg:mx-auto lg:w-full lg:max-w-[calc((80rem-4rem)/2+2rem)] lg:justify-center lg:pb-20 lg:pl-8 lg:pr-12 lg:pt-20">
+    <section className="border-b border-border">
+      <div className="mx-auto flex max-w-5xl flex-col-reverse items-center gap-10 px-5 py-16 sm:px-8 sm:py-24 lg:flex-row lg:items-center lg:justify-between lg:gap-16">
+        <div className="animate-fade-up flex flex-col">
           <h1 className="font-display text-5xl leading-[1.05] tracking-tight text-ink sm:text-6xl lg:text-7xl">
             {site.name}
           </h1>
@@ -23,14 +23,14 @@ export function Hero() {
           </div>
         </div>
 
-        <div className="animate-fade-up-delay relative min-h-[22rem] w-full lg:min-h-full">
+        <div className="animate-fade-up-delay relative aspect-[331/432] w-48 shrink-0 overflow-hidden rounded-2xl sm:w-64">
           <Image
             src="/images/hero.jpg"
             alt={`Portrait of ${site.name}`}
             fill
             priority
             className="object-cover"
-            sizes="(max-width: 1024px) 100vw, 50vw"
+            sizes="(max-width: 640px) 12rem, 16rem"
           />
         </div>
       </div>
