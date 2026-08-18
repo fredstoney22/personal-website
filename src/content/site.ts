@@ -1,7 +1,8 @@
 export const site = {
   name: "Frederick Stoney",
   title: "Software Engineer",
-  tagline: "Product-minded builder.",
+  tagline:
+    "I love to build and optimize with software engineering, math, and statistics.",
   availability: "Open to opportunities · Remote",
   intro: [
     "I'm a software engineer who ships web products from idea to launch — interfaces people enjoy using and systems that hold up under real use.",

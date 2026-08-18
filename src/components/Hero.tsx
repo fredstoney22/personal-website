@@ -18,10 +18,7 @@ export function Hero({ projectHref }: HeroProps) {
             {site.name}
           </h1>
           <p className="mt-5 max-w-md text-lg text-foreground sm:text-xl">
-            {site.title}. {site.tagline}
-          </p>
-          <p className="mt-3 max-w-md text-base text-muted">
-            Projects, tools, and résumé below.
+            {site.tagline}
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <a
