@@ -20,7 +20,7 @@ export const projects: Project[] = [
     slug: "prism",
     title: "Prism",
     summary:
-      "A colour-mixing logic puzzle game — XOR-mix RYB pigments across a grid to clear it to white. Full product with accounts, daily puzzles, and paid puzzle packs.",
+      "A colour-mixing logic puzzle game with accounts, daily puzzles, and a Stripe-backed storefront for paid packs.",
     year: "2026",
     role: "Solo",
     tools: [
@@ -35,13 +35,13 @@ export const projects: Project[] = [
       "Vercel",
     ],
     overview:
-      "Prism is an installable PWA puzzle game where the board is modeled as a system of linear equations over GF(2): applying a template XORs its pigment pattern into the grid, and clearing every cell to white solves the puzzle.",
+      "An installable PWA puzzle game: apply templates to a grid of pigment cells, mixing Red/Yellow/Blue, until every cell clears to white.",
     problem:
-      "Grid-toggle puzzles (Lights Out and its relatives) are easy to generate randomly but hard to generate *well* — most random boards are either trivially easy or provably unsolvable. Difficulty needs to be tunable and guaranteed solvable.",
+      "Grid-toggle puzzles are easy to generate randomly but hard to generate well — most random boards are trivially easy or unsolvable, and difficulty needs to be tunable.",
     built:
-      "A full-stack SvelteKit + Hono monorepo: a puzzle engine that generates, solves, and scores puzzle difficulty via linear algebra over GF(2); a procedurally generated daily puzzle; Google OAuth accounts; and a Stripe-backed storefront for paid puzzle packs, with a bootstrap script that keeps Stripe products in sync with the pack catalog.",
+      "A SvelteKit + Hono monorepo: a puzzle engine that models the board as linear equations over GF(2) to generate, solve, and score difficulty; a procedurally generated daily puzzle; Google OAuth accounts; and a Stripe storefront for paid packs.",
     impact:
-      "A live, monetized product — not just a tech demo. Real accounts, real payments, a puzzle-generation engine sophisticated enough to guarantee solvability and target specific difficulty bands.",
+      "A live, monetized product — real accounts, real payments, not a tech demo.",
     links: [
       {
         label: "Live site",
