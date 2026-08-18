@@ -11,9 +11,6 @@ export function Hero({ projectHref }: HeroProps) {
     <section className="relative overflow-hidden border-b border-border">
       <div className="relative mx-auto grid min-h-[min(88vh,52rem)] max-w-none lg:grid-cols-2">
         <div className="animate-fade-up flex flex-col justify-end px-5 pb-16 pt-14 sm:px-8 lg:mx-auto lg:w-full lg:max-w-[calc((80rem-4rem)/2+2rem)] lg:justify-center lg:pb-20 lg:pl-8 lg:pr-12 lg:pt-20">
-          <p className="mb-4 text-sm font-medium tracking-wide text-accent">
-            {site.availability}
-          </p>
           <h1 className="font-display text-5xl leading-[1.05] tracking-tight text-ink sm:text-6xl lg:text-7xl">
             {site.name}
           </h1>
