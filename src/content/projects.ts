@@ -3,7 +3,6 @@ export type Project = {
   title: string;
   summary: string;
   year: string;
-  role: string;
   tools: string[];
   productSummary: string;
   technicalSummary: string;
@@ -20,7 +19,6 @@ export const projects: Project[] = [
     summary:
       "A colour-mixing logic puzzle game with accounts, daily puzzles, and a Stripe-backed storefront for paid packs.",
     year: "2026",
-    role: "Solo",
     tools: [
       "SvelteKit",
       "Svelte 5",
@@ -53,7 +51,6 @@ export const projects: Project[] = [
     summary:
       "Daily AI-curated news briefing that cuts through the noise — global news and internet culture in a readable morning format.",
     year: "2026",
-    role: "Solo",
     tools: [
       "SvelteKit",
       "TypeScript",
@@ -82,7 +79,6 @@ export const projects: Project[] = [
     summary:
       "A bilingual (English/Spanish) wedding site with a full RSVP flow, built for a destination wedding in Colombia.",
     year: "2026",
-    role: "Solo",
     tools: ["SvelteKit", "Svelte 5", "TypeScript", "Vercel", "Resend"],
     productSummary:
       "A bilingual invitation site — schedule, travel, hotels, and FAQs, each with an /es mirror — plus an RSVP flow for a destination wedding in Colombia.",

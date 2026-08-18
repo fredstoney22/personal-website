@@ -15,9 +15,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
         <h3 className="font-display text-2xl tracking-tight text-ink transition-colors group-hover:text-accent">
           {project.title}
         </h3>
-        <p className="text-sm text-muted">
-          {project.year} · {project.role}
-        </p>
+        <p className="text-sm text-muted">{project.year}</p>
       </div>
       <p className="mt-3 max-w-2xl text-muted">{project.summary}</p>
       <ul className="mt-5 flex flex-wrap gap-2" aria-label="Tools used">
