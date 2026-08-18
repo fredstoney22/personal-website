@@ -3,10 +3,6 @@ export const site = {
   title: "Software Engineer",
   tagline:
     "I love to build and optimize with software engineering, math, and statistics.",
-  intro: [
-    "I'm a software engineer who ships web products from idea to launch — interfaces people enjoy using and systems that hold up under real use.",
-    "This site is a living portfolio: a short introduction, selected work, and an up-to-date résumé for anyone evaluating me for hire.",
-  ],
   email: "fredstoney22@gmail.com",
   social: {
     linkedin: "https://www.linkedin.com/in/fred-stoney/",

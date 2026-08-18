@@ -1,6 +1,5 @@
 import Link from "next/link";
 import { Hero } from "@/components/Hero";
-import { Intro } from "@/components/Intro";
 import { site } from "@/content/site";
 import { projects } from "@/content/projects";
 
@@ -10,7 +9,6 @@ export default function HomePage() {
   return (
     <>
       <Hero projectHref={`/projects/${featured.slug}`} />
-      <Intro />
 
       <section
         id="projects"
