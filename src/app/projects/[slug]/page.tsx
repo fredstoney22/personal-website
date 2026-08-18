@@ -33,10 +33,8 @@ export default async function ProjectDetailPage({ params }: ProjectPageProps) {
   if (!project) notFound();
 
   const sections = [
-    { id: "overview", title: "Overview", body: project.overview },
-    { id: "problem", title: "Problem", body: project.problem },
-    { id: "built", title: "What I built", body: project.built },
-    { id: "impact", title: "Impact", body: project.impact },
+    { id: "product", title: "Product", body: project.productSummary },
+    { id: "technical", title: "Technical", body: project.technicalSummary },
   ] as const;
 
   return (

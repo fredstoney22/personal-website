@@ -5,10 +5,8 @@ export type Project = {
   year: string;
   role: string;
   tools: string[];
-  overview: string;
-  problem: string;
-  built: string;
-  impact: string;
+  productSummary: string;
+  technicalSummary: string;
   links: {
     label: string;
     href: string;
@@ -34,14 +32,10 @@ export const projects: Project[] = [
       "Stripe",
       "Vercel",
     ],
-    overview:
-      "An installable PWA puzzle game: apply templates to a grid of pigment cells, mixing Red/Yellow/Blue, until every cell clears to white.",
-    problem:
-      "Grid-toggle puzzles are easy to generate randomly but hard to generate well — most random boards are trivially easy or unsolvable, and difficulty needs to be tunable.",
-    built:
-      "A SvelteKit + Hono monorepo: a puzzle engine that models the board as linear equations over GF(2) to generate, solve, and score difficulty; a procedurally generated daily puzzle; Google OAuth accounts; and a Stripe storefront for paid packs.",
-    impact:
-      "A live, monetized product — real accounts, real payments, not a tech demo.",
+    productSummary:
+      "Players mix Red/Yellow/Blue pigments across a grid to clear it to white. Includes accounts, a daily puzzle, and a storefront for paid puzzle packs.",
+    technicalSummary:
+      "SvelteKit + Hono monorepo. The puzzle engine models the board as linear equations over GF(2) to generate, solve, and score difficulty. Google OAuth via better-auth, Postgres/Drizzle, and a Stripe storefront kept in sync with the pack catalog.",
     links: [
       {
         label: "Live site",
@@ -67,14 +61,10 @@ export const projects: Project[] = [
       "Upstash Redis",
       "Vercel",
     ],
-    overview:
-      "Over the Rock is a daily briefing site that uses AI to gather and summarize recent stories across global news and internet culture, then presents them in a conversational, skimmable format.",
-    problem:
-      "News feeds are noisy and fragmented. Most people want a short, trustworthy catch-up — not another infinite scroll of headlines competing for attention.",
-    built:
-      "A SvelteKit app that generates and serves a daily AI briefing, caches content with Upstash Redis, renders sanitized Markdown, and deploys on Vercel at overtherock.frederickstoney.com.",
-    impact:
-      "A live product that delivers a fresh briefing each day — one place to scan what matters without digging through a dozen tabs.",
+    productSummary:
+      "A daily AI-generated news briefing — global news and internet culture, summarized in a conversational, skimmable format.",
+    technicalSummary:
+      "SvelteKit app on Vercel. A daily cron job calls Gemini with grounded web search and caches the result in Upstash Redis, so the site serves sanitized Markdown without per-request LLM calls.",
     links: [
       {
         label: "Live site",
@@ -94,14 +84,10 @@ export const projects: Project[] = [
     year: "2026",
     role: "Solo",
     tools: ["SvelteKit", "Svelte 5", "TypeScript", "Vercel", "Resend"],
-    overview:
-      "A bilingual invitation site — every page (schedule, travel, hotels, FAQs) has an /es mirror — with an RSVP flow that logs each response to a Google Sheet and sends a confirmation email.",
-    problem:
-      "A destination wedding with a bilingual, international guest list needs logistics (transport, lodging, schedule) presented clearly in two languages, plus a low-friction way to collect RSVPs and dietary/song info without a heavyweight event platform.",
-    built:
-      "A SvelteKit site with a custom cream/gold visual theme, an RSVP API route that writes to a Google Sheet via an Apps Script webhook and optionally emails a confirmation through Resend, and full English/Spanish route parity.",
-    impact:
-      "The live site guests use to plan travel and RSVP for the wedding.",
+    productSummary:
+      "A bilingual invitation site — schedule, travel, hotels, and FAQs, each with an /es mirror — plus an RSVP flow for a destination wedding in Colombia.",
+    technicalSummary:
+      "SvelteKit site with full English/Spanish route parity. The RSVP form posts to an API route that logs to a Google Sheet via an Apps Script webhook and sends a confirmation email through Resend.",
     links: [
       {
         label: "Live site",
