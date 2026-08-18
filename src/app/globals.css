@@ -46,6 +46,8 @@ body {
     radial-gradient(ellipse 70% 45% at 0% 0%, var(--glow), transparent 55%),
     radial-gradient(ellipse 55% 35% at 100% 5%, #d5dde8, transparent 50%),
     linear-gradient(165deg, #e4ebf0 0%, #e9eef2 45%, #dde8e6 100%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .site-grain {
