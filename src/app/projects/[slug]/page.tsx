@@ -112,12 +112,6 @@ export default async function ProjectDetailPage({ params }: ProjectPageProps) {
           ← All projects
         </Link>
         <a
-          href={`mailto:${site.email}`}
-          className="text-sm font-medium text-accent underline-offset-4 hover:underline"
-        >
-          Get in touch
-        </a>
-        <a
           href={site.resumePath}
           download
           className="text-sm font-medium text-accent underline-offset-4 hover:underline"
