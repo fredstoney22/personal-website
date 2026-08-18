@@ -1,4 +1,3 @@
-import { ContactStrip } from "@/components/ContactStrip";
 import { Hero } from "@/components/Hero";
 import { Intro } from "@/components/Intro";
 import { ProjectCard } from "@/components/ProjectCard";
@@ -39,8 +38,6 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-
-      <ContactStrip />
     </>
   );
 }

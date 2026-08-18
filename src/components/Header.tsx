@@ -5,7 +5,7 @@ const links = [
   { href: "/", label: "Home" },
   { href: "/projects", label: "Projects" },
   { href: site.resumePath, label: "Résumé", download: true },
-  { href: "/#contact", label: "Contact" },
+  { href: `mailto:${site.email}`, label: "Contact", external: true },
 ] as const;
 
 export function Header() {
@@ -20,11 +20,12 @@ export function Header() {
         </Link>
         <nav aria-label="Primary" className="flex flex-wrap items-center justify-end gap-x-5 gap-y-2 text-sm">
           {links.map((link) =>
-            "download" in link && link.download ? (
+            ("download" in link && link.download) ||
+            ("external" in link && link.external) ? (
               <a
                 key={link.href}
                 href={link.href}
-                download
+                download={"download" in link ? link.download : undefined}
                 className="text-muted transition-colors hover:text-ink"
               >
                 {link.label}
