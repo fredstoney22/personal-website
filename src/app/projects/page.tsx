@@ -15,10 +15,6 @@ export default function ProjectsPage() {
         <h1 className="font-display text-4xl tracking-tight text-ink sm:text-5xl">
           Projects
         </h1>
-        <p className="mt-4 max-w-xl text-muted">
-          Work samples with tech stack tags. More entries will land here as the
-          portfolio grows.
-        </p>
         <ul className="mt-10 space-y-6">
           {projects.map((project) => (
             <li key={project.slug}>
