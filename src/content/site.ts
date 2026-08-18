@@ -9,7 +9,8 @@ export const site = {
   ],
   email: "fredstoney22@gmail.com",
   social: {
-    linkedin: "https://linkedin.com/in/placeholder",
+    linkedin: "https://www.linkedin.com/in/fred-stoney/",
+    github: "https://github.com/fredstoney22",
   },
   resumePath: "/resume.pdf",
   resumeLabel: "Download résumé",

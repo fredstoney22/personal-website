@@ -1,3 +1,4 @@
+import { GitHubIcon } from "@/components/GitHubIcon";
 import { LinkedInIcon } from "@/components/LinkedInIcon";
 import { site } from "@/content/site";
 
@@ -19,6 +20,15 @@ export function Footer() {
           className="inline-flex transition-colors hover:text-ink"
         >
           <LinkedInIcon className="h-4 w-4" />
+        </a>
+        <a
+          href={site.social.github}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="GitHub"
+          className="inline-flex transition-colors hover:text-ink"
+        >
+          <GitHubIcon className="h-4 w-4" />
         </a>
       </div>
     </footer>
