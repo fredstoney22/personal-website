@@ -4,11 +4,9 @@ import { site } from "@/content/site";
 import { projects } from "@/content/projects";
 
 export default function HomePage() {
-  const featured = projects[0];
-
   return (
     <>
-      <Hero projectHref={`/projects/${featured.slug}`} />
+      <Hero />
 
       <section
         id="projects"

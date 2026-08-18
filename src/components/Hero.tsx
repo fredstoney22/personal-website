@@ -1,12 +1,7 @@
 import Image from "next/image";
-import Link from "next/link";
 import { site } from "@/content/site";
 
-type HeroProps = {
-  projectHref: string;
-};
-
-export function Hero({ projectHref }: HeroProps) {
+export function Hero() {
   return (
     <section className="relative overflow-hidden border-b border-border">
       <div className="relative mx-auto grid min-h-[min(88vh,52rem)] max-w-none lg:grid-cols-2">
@@ -25,12 +20,6 @@ export function Hero({ projectHref }: HeroProps) {
             >
               {site.resumeLabel}
             </a>
-            <Link
-              href={projectHref}
-              className="inline-flex items-center justify-center rounded-md border border-border bg-surface px-5 py-3 text-sm font-medium text-ink transition-colors hover:border-accent hover:bg-accent-soft focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
-            >
-              View project
-            </Link>
           </div>
         </div>
 
