@@ -42,8 +42,8 @@ export function Hero({ projectHref }: HeroProps) {
 
         <div className="animate-fade-up-delay relative min-h-[22rem] w-full lg:min-h-full">
           <Image
-            src="/images/placeholder-avatar.svg"
-            alt={`Portrait placeholder for ${site.name}`}
+            src="/images/hero.jpg"
+            alt={`Portrait of ${site.name}`}
             fill
             priority
             className="object-cover"
